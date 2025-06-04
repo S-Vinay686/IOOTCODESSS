@@ -4,8 +4,7 @@ void setup() {
 Serial.begin(9600);
 // initialize serial
 pinMode(BUTTON_PIN, INPUT_PULLUP); // set Arduino pin to input pull-up mode
-pinMode(MT_RELAY_PIN, OUTPUT);
-// set Arduino pin to output mode
+pinMode(MT_RELAY_PIN, OUTPUT);// set Arduino pin to output mode
 }
 void loop()
 {
