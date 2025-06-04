@@ -33,9 +33,7 @@ delay(1000);
 } 
 void loop() 
 { 
-// 
-Read Field 1 
-// 
+// Read Field 1 // 
 long humidity = ThingSpeak.readLongField(ChannelID, FieldNumber1, myCounterReadAPIKey); 
 statusCode = ThingSpeak.getLastReadStatus(); 
 if (statusCode == 200) 
@@ -48,12 +46,8 @@ else
 Serial.println("Unable to read channel data or No internet"); 
 } 
 delay(1000); 
-// 
-End of Field 1 
-// 
-Read Field 2 
-// 
-// 
+// End of Field 1 // 
+// Read Field 2  // 
 long temp = ThingSpeak.readLongField(ChannelID, FieldNumber2, myCounterReadAPIKey); 
 statusCode = ThingSpeak.getLastReadStatus(); 
 if (statusCode == 200) 
@@ -65,6 +59,5 @@ else
 Serial.println("Unable to read channel data or No internet"); 
 } 
 delay(15000); 
-// 
-End of Field 2 
+// End of Field 2 //
 } 
