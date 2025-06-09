@@ -8,10 +8,10 @@
 #define DHTTYPE DHT11 
 #define DHTPin D5 
 DHT dht(DHTPin, DHTTYPE); 
-unsigned long ch_no =2340960; //Replace with ThingSpeak Channel number 
-const char * write_api = "HM5YR2KI9MVW72UH"; //Replace with ThingSpeak write API 
-char ssid[ ] = " "; //use your mobile data user name 
-char pass[ ] = " "; // use your internet password 
+unsigned long ch_no =2975261; //Replace with ThingSpeak Channel number 
+const char * write_api = "7BH6QKOTDH3PDQPO"; //Replace with ThingSpeak write API 
+char ssid[ ] = "UltraVnet_Skill lab 2.4gh"; //use your mobile data user name 
+char pass[ ] = "eastwest@1EE2023"; // use your internet password 
 volatile float temperature=0, humidity=0; 
 WiFiClient client; 
 void setup() 
